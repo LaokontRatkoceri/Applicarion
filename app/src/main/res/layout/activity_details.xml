@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/Name_TextView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Name:"
+        android:textSize="19sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="55dp"
+        />
+
+    <TextView
+        android:id="@+id/Surname_TextView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Surname:"
+        android:textSize="19sp"
+        app:layout_constraintTop_toBottomOf="@id/Name_TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="33dp"
+        />
+    <TextView
+        android:id="@+id/Tel_TextView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Telephone:"
+        android:textSize="19sp"
+        app:layout_constraintTop_toBottomOf="@id/Surname_TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="33dp"
+        />
+    <TextView
+        android:id="@+id/Date_TextView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Date:"
+        android:textSize="19sp"
+        app:layout_constraintTop_toBottomOf="@id/Tel_TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="33dp"
+        />
+
+    <TextView
+        android:id="@+id/Name_show"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/Name_TextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="55dp"
+        />
+
+    <TextView
+        android:id="@+id/Surname_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="@id/Surname_TextView"
+        app:layout_constraintEnd_toEndOf="@id/Name_show"
+
+        app:layout_constraintStart_toStartOf="@+id/Name_show"
+        app:layout_constraintTop_toTopOf="@+id/Surname_TextView" />
+
+    <TextView
+        android:id="@+id/Tel_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/Tel_TextView"
+        app:layout_constraintBottom_toBottomOf="@id/Tel_TextView"
+        app:layout_constraintStart_toStartOf="@+id/Name_show"
+        />
+
+    <TextView
+        android:id="@+id/Date_Show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="@id/Name_show"
+        app:layout_constraintTop_toTopOf="@id/Date_TextView"
+        app:layout_constraintStart_toStartOf="@+id/Name_show"
+
+        app:layout_constraintBottom_toBottomOf="@id/Date_TextView"/>
+    <TextView
+        android:id="@+id/Email_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+
+        app:layout_constraintTop_toBottomOf="@id/Date_TextView"
+        app:layout_constraintStart_toStartOf="@id/Date_TextView"
+        android:layout_marginTop="33dp"
+        android:text="Email:"
+       />
+
+    <TextView
+        android:id="@+id/Email_Show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+
+        app:layout_constraintTop_toTopOf="@id/Email_TextView"
+        app:layout_constraintStart_toStartOf="@id/Date_Show"
+        app:layout_constraintEnd_toEndOf="@id/Date_Show"
+        android:text=""
+        />
+
+    <Button
+        android:id="@+id/Call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
